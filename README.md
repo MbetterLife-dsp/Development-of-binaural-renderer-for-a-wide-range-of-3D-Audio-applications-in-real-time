@@ -44,7 +44,11 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
     * The human auditory system then recognizes the spatial characteristics of the reproduction space via this time-frequency varying spectrum. 
     * Thus, to achieve high  ﬁdelity of 3D sound, the direct sound and early-reﬂections should be accurately reproduced.
     * Late reverberation
-      * ![image](https://user-images.githubusercontent.com/86009768/135296512-36c12694-3bc9-4cdb-8b67-d3b92a3ed814.png) ![image](https://user-images.githubusercontent.com/86009768/135296543-a86cd2f8-02fc-426f-b8ff-58143cd4c88e.png) (image from [Paper : Scalable Multiband Binaural Renderer for MPEG-H 3D Audio][research])
+        
+        ![image](https://user-images.githubusercontent.com/86009768/135296512-36c12694-3bc9-4cdb-8b67-d3b92a3ed814.png) 
+         
+         (image from [Paper : Scalable Multiband Binaural Renderer for MPEG-H 3D Audio][research])
+         
       * The figure in (a) shows 22-channel BRIRs (early reflection~late reverberation) FDIC in the interval of 5-1000ms, and the figure in (b) shows 22-channel BRIRs (late reverberation) FDIC in the interval of 55-1000ms.
       * In the figure of (a), the coherence of each channel is large, and in the figure (b), the coherence is small.
       *  In the interval including early reflection, interaural coherence changes a lot dependent to head rotation, but in the late reverberation interval, interaural coherence appears independently of head rotation.
