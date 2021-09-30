@@ -54,14 +54,25 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
       *  In the interval including early reflection, interaural coherence changes a lot dependent to head rotation, but in the late reverberation interval, interaural coherence appears independently of head rotation.
       * That is, early reflection is dependent on the position of the channel speaker, but late reverberation is independent to the channel speaker. Therefore, it is possible to think of a method of changing the interval of late reverberation to a modeled late reverberation with lower complexity.
 
-  * Mixing time
-    * For the independent processing of the each part of the BRIR, the direct plus early-reflections and late reverberations should be separated, which is possible by finding a transition point, generally referred to as mixing time.
-    * Late reverberation is independent of the location and direction. 
-    * For a high-quality result, It is necessary to find the mixing time for each sub-band in the QMF domain.
-
-
-
+* Mixing time
+  For the independent processing of the each part of the BRIR, the direct plus early-reflections and late reverberations should be separated, which is possible by finding a transition point, generally referred to as mixing time.
+  Late reverberation is independent of the location and direction. 
+  For a high-quality result, It is necessary to find the mixing time for each sub-band in the QMF domain.
   
+  * Multiband Mixing Time Estimation
+    * To measure the mixing time in the QMF domain, the BRIRs ﬁrst need to be decomposed into the QMF domain.
+    * The QMF domain sub-band BRIRs ℎ^𝑖𝑗 (𝑛,𝑏) are then obtained as
+      ![image](https://user-images.githubusercontent.com/86009768/135446523-4bd2cca0-c543-44a4-9b91-73228c7c5746.png)
+      
+    * To measure the mixing time in each sub-band, the proposed method utilizes the simple EDR measure using the sub-band BRIR. 
+    * Mixing time is determined using a criterion based on the EDR:
+      ![image](https://user-images.githubusercontent.com/86009768/135446689-3a588838-16a5-47cb-adc0-caf809e81c61.png)
+    
+    * Then a pseudo-mixing time (a scalable mixing time by varying the threshold 𝑇_𝑚 ) is determined; the averaged 𝑁_𝑀𝑇(𝑏) over all channels is given by
+      ![image](https://user-images.githubusercontent.com/86009768/135447008-587d8beb-24b5-4239-949f-aa511aafa6f8.png)
+    
+    * 𝑁_𝑀𝑇 (𝑏) is used to partition the BRIRs into two parts:  the direct sound plus early-reﬂection-like and late reverberation-like.
+
 
 
 
