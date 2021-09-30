@@ -93,6 +93,9 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
   * To implement blockwise fast convolution with a variable filter order, parameters such as FFT size and the number of BRIR blocks for each sub-band first need to be determined.
   * To perform variable order filtering, each sub-band BRIR is truncated up to 𝐿_𝑉𝑂𝐹𝐹 (𝑏), which is determined to a power of 2 to perform a radix-2 FFT, as given by
     ![image](https://user-images.githubusercontent.com/86009768/135449735-25239a86-f96b-4b98-9d62-95bd426b6c8a.png)
+    * Expression with image
+      ![image](https://user-images.githubusercontent.com/86009768/135451164-9dce2841-a067-489c-be51-9b706d84615f.png
+
   * To prevent discontinuity in the impulse response for impulsive sound due to the truncation between the direct sound plus early-reflections and late reverberation, a window function implementing fade-in and fade-out is utilized.
   * The window function for the direct sound plus early-reflection part is given by
     ![image](https://user-images.githubusercontent.com/86009768/135450121-e245b0ac-d80d-43a2-85ac-45affbdb78c4.png)
