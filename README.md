@@ -102,8 +102,23 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
   
   * The sub-band BRIRs are also partitioned into subblocks with zero-padding, as given by
     ![image](https://user-images.githubusercontent.com/86009768/135451397-c538f212-c398-490c-a68e-a76d90816df0.png)
-    
-  * Expression with image
-    ![image](https://user-images.githubusercontent.com/86009768/135451427-e3efaa2f-5f9e-411e-8f12-5548dfbd01f7.png)
 
+    * Expression with image
+      ![image](https://user-images.githubusercontent.com/86009768/135451427-e3efaa2f-5f9e-411e-8f12-5548dfbd01f7.png)
+
+  * Let the frame size of the decoded audio signal be 𝐿_𝑓. If 𝑁_𝑓𝑓𝑡 (𝑏) is smaller than 𝐿_𝑓 , the input audio signal is divided into a number of subframes. The number of subframes 𝑁_𝑓𝑟𝑚 (𝑏) is then determined as
+    ![image](https://user-images.githubusercontent.com/86009768/135451989-fb5792a2-cf40-45c6-9378-63d3cd7f3504.png)
+ 
+ * Given a sub-band audio input 𝑥_𝑖 (𝐿_𝑓 𝑙+𝑛, 𝑏) of the 𝑙th frame, the 𝑟th subframe signal is obtained as
+    ![image](https://user-images.githubusercontent.com/86009768/135452033-169e7068-cbc1-4103-9c61-322d173a0ca1.png)
+ 
+ * After transforming each subframe signal using FFT, the output of the VOFF module is obtained as
+    ![image](https://user-images.githubusercontent.com/86009768/135452143-b1bbe269-b6de-43d3-8b0f-31e28bdb5f35.png) 
+
+* Later, the output of the VOFF module 𝑌_𝐷𝐸^𝑗 (𝑘,𝑟,𝑏) will be combined with the output of the PLF module before inverse FFT.
+    ![image](https://user-images.githubusercontent.com/86009768/135452280-65e08ac9-83da-4757-97a0-5236fff480aa.png)
+               (image from [Paper :Scalable Multiband Binaural Renderer for MPEG-H 3D Audio][research])
+    
+    * Expression with image 
+      ![image](https://user-images.githubusercontent.com/86009768/135452732-1ffc59ec-89f6-4d6a-8b83-6297b671e843.png)
 
