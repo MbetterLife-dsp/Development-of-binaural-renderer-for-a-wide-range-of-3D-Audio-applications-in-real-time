@@ -88,6 +88,14 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
         * Partitioned direct sound plus early-reflection BRIR : BRIR --> QMF anlaysis --> h_sub_mix = h_sub( 1 : mixingtime , 2)
         * difference = h_sub_full – h_sub_mix
 
+* Variable Order Filtering in Frequency Domain (VOFF)
+  * The separated direct sound plus early-reflection parts of BRIR can have different lengths in each channel and band.
+  * To implement blockwise fast convolution with a variable filter order, parameters such as FFT size and the number of BRIR blocks for each sub-band first need to be determined.
+  * To perform variable order filtering, each sub-band BRIR is truncated up to 𝐿_𝑉𝑂𝐹𝐹 (𝑏), which is determined to a power of 2 to perform a radix-2 FFT, as given by
+    ![image](https://user-images.githubusercontent.com/86009768/135449735-25239a86-f96b-4b98-9d62-95bd426b6c8a.png)
+  * To prevent discontinuity in the impulse response for impulsive sound due to the truncation between the direct sound plus early-reflections and late reverberation, a window function implementing fade-in and fade-out is utilized.
+  * The window function for the direct sound plus early-reflection part is given by
+    ![image](https://user-images.githubusercontent.com/86009768/135450121-e245b0ac-d80d-43a2-85ac-45affbdb78c4.png)
 
 
 
