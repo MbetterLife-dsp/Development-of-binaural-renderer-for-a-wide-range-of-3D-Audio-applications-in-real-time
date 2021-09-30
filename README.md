@@ -73,8 +73,16 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
     
     * ^𝑁_𝑀𝑇 (𝑏) is used to partition the BRIRs into two parts:  the direct sound plus early-reﬂection-like and late reverberation-like.
       ![image](https://user-images.githubusercontent.com/86009768/135447846-171c14a5-bfc2-4a83-a4eb-4217e760fe2b.png)
-      * From the 2nd band to the 37th band, the estimated pseudo-mixing time logarithmically decreases.
-      * Above the 38th band, however, the mixing time is overestimated due to an insufficiently low SNR condition.
+      
+        (image from [Paper :Scalable Multiband Binaural Renderer for MPEG-H 3D Audio][research])
+        
+        From the 2nd band to the 37th band, the estimated pseudo-mixing time logarithmically decreases.
+        Above the 38th band, however, the mixing time is overestimated due to an insufficiently low SNR condition.
+      
+      ![image](https://user-images.githubusercontent.com/86009768/135448154-b75132df-cd33-4715-b95b-627fab65e662.png)
+        Full length BRIR : BRIR  QMF anlaysis   h_sub_full=h_sub( 1 : end  , 2) 
+        Partitioned direct sound plus early-reflection BRIR : BRIR  QMF anlaysis  h_sub_ mix = h_sub( 1 : mixingtime , 2)
+        difference = h_sub_full – h_sub_mix
 
 
 
