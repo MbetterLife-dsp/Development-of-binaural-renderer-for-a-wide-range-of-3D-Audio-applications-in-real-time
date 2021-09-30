@@ -99,6 +99,11 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
   * To prevent discontinuity in the impulse response for impulsive sound due to the truncation between the direct sound plus early-reflections and late reverberation, a window function implementing fade-in and fade-out is utilized.
   * The window function for the direct sound plus early-reflection part is given by
     ![image](https://user-images.githubusercontent.com/86009768/135450121-e245b0ac-d80d-43a2-85ac-45affbdb78c4.png)
-
+  
+  * The sub-band BRIRs are also partitioned into subblocks with zero-padding, as given by
+    ![image](https://user-images.githubusercontent.com/86009768/135451397-c538f212-c398-490c-a68e-a76d90816df0.png)
+    
+  * Expression with image
+    ![image](https://user-images.githubusercontent.com/86009768/135451427-e3efaa2f-5f9e-411e-8f12-5548dfbd01f7.png)
 
 
