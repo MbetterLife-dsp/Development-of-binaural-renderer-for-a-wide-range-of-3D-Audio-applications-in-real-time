@@ -71,7 +71,10 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
     * Then a pseudo-mixing time (a scalable mixing time by varying the threshold 𝑇_𝑚 ) is determined; the averaged 𝑁_𝑀𝑇(𝑏) over all channels is given by
       ![image](https://user-images.githubusercontent.com/86009768/135447008-587d8beb-24b5-4239-949f-aa511aafa6f8.png)
     
-    * 𝑁_𝑀𝑇 (𝑏) is used to partition the BRIRs into two parts:  the direct sound plus early-reﬂection-like and late reverberation-like.
+    * ^𝑁_𝑀𝑇 (𝑏) is used to partition the BRIRs into two parts:  the direct sound plus early-reﬂection-like and late reverberation-like.
+      ![image](https://user-images.githubusercontent.com/86009768/135447846-171c14a5-bfc2-4a83-a4eb-4217e760fe2b.png)
+      * From the 2nd band to the 37th band, the estimated pseudo-mixing time logarithmically decreases.
+      * Above the 38th band, however, the mixing time is overestimated due to an insufficiently low SNR condition.
 
 
 
