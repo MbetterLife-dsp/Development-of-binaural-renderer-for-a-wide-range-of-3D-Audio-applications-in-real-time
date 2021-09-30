@@ -123,3 +123,19 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
       ![image](https://user-images.githubusercontent.com/86009768/135452732-1ffc59ec-89f6-4d6a-8b83-6297b671e843.png)
 
 # Experiment results
+
+* QMF implementation
+  * SBR QMF Analysis and Synthesis
+    * Analysis
+      ![image](https://user-images.githubusercontent.com/86009768/135453449-454c3e2c-216f-41d6-9065-051c100baba1.png)
+    
+    * Synthesis
+      ![image](https://user-images.githubusercontent.com/86009768/135453521-12716db1-e9d0-4046-ac68-b88c6bd983a5.png)
+    
+    * Comparison of convolution-based binaural rendering in QMF domain and convolution-based binaural rendering in time domain.
+      ![image](https://user-images.githubusercontent.com/86009768/135454391-3bd3894c-d310-49ea-9bdb-13f2e70e5441.png)
+
+* Mixing time
+  * Measurement sub-band mixing time
+    ![image](https://user-images.githubusercontent.com/86009768/135455721-711778cf-5178-44df-9bd0-0525c70c0dce.png)
+    * As implemented in the paper, the estimated pseudo-mixing time from the 2nd band to the 37th band decreases logarithmically, but the mixing time is overestimated above the 38th band.
