@@ -142,8 +142,10 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
 
   * Setting the mixing time dependent to the threshold
     
-    1. ![image](https://user-images.githubusercontent.com/86009768/135457786-73ef948c-84d1-44d8-a98d-315c28f5f2a1.png)
-    2. ![image](https://user-images.githubusercontent.com/86009768/135458734-bfc4bf67-0081-43cd-beee-61b353875b3f.png)
+    1. Frequency response of the full-length BRIR and frequency response of BRIR dependent to threshold.
+      ![image](https://user-images.githubusercontent.com/86009768/135457786-73ef948c-84d1-44d8-a98d-315c28f5f2a1.png)
+    2. Frequency response differences of the full-length BRIR and frequency response of BRIR dependent to threshold. 
+      ![image](https://user-images.githubusercontent.com/86009768/135458734-bfc4bf67-0081-43cd-beee-61b353875b3f.png)
     
-      As the threshold is lowered, it can be seen that the BRIR becomes similar to the BRIR frequency response of the full length. By setting the threshold according to the actual application situation, the audio quality can be increased or the computational complexity can be reduced.
+      * As the threshold is lowered, it can be seen that the BRIR becomes similar to the BRIR frequency response of the full length. By setting the threshold according to the actual application situation, the audio quality can be increased or the computational complexity can be reduced.
 
