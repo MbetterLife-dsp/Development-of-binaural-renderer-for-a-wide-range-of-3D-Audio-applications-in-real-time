@@ -108,7 +108,10 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
      where 0≤𝑛 <(𝑁_𝑓𝑓𝑡 (𝑏))/2,0 ≤𝑏<𝐾_(𝑐𝑜𝑛𝑣, ) 0 ≤  𝑠 <𝑁_𝑏𝑙𝑘^𝐷𝐸 (𝑏) and 𝑤𝑖𝑛𝑑𝑜𝑤(𝑛;𝐿) is a fade-out function with length 𝐿 such as rectangular, cosine, hanning windows, and so on.
 
   * The sub-band BRIRs are also partitioned into subblocks with zero-padding, as given by
-    ![image](https://user-images.githubusercontent.com/86009768/135451397-c538f212-c398-490c-a68e-a76d90816df0.png)
+    ![image](https://user-images.githubusercontent.com/86009768/136416604-679a6dd2-9e0e-4bba-af07-3127dffde5f6.png)
+    
+    where ℎ_𝐷𝐸^𝑖𝑗 (𝑛,𝑏)=𝑤(𝑛,𝑏) ℎ^𝑖𝑗 (𝑛,𝑏),0≤𝑠<𝑁_𝑏𝑙𝑘^𝐷𝐸 (𝑏),  0≤𝑏<𝐾_𝑐𝑜𝑛𝑣  and 0 ≤𝑛<𝑁_𝑓𝑓𝑡 (𝑏). 
+    Then , to get FFT coefficients 𝐻_𝐷𝐸^𝑖𝑗 (𝑘,𝑠,𝑏), a 𝑁_𝑓𝑓𝑡 (𝑏)𝑠𝑖𝑧𝑒 𝐹𝐹𝑇 is applied to ℎ_𝐷𝐸^𝑖𝑗 (𝑛,𝑥,𝑏).
 
     * Expression with image
       ![image](https://user-images.githubusercontent.com/86009768/135451427-e3efaa2f-5f9e-411e-8f12-5548dfbd01f7.png)
