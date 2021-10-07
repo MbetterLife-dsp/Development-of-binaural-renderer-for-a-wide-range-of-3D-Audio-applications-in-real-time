@@ -72,6 +72,7 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
       ![image](https://user-images.githubusercontent.com/86009768/135447008-587d8beb-24b5-4239-949f-aa511aafa6f8.png)
     
     * ^𝑁_𝑀𝑇 (𝑏) is used to partition the BRIRs into two parts:  the direct sound plus early-reﬂection-like and late reverberation-like.
+     
       ![image](https://user-images.githubusercontent.com/86009768/135447846-171c14a5-bfc2-4a83-a4eb-4217e760fe2b.png)
       
         (image from [Paper :Scalable Multiband Binaural Renderer for MPEG-H 3D Audio][research])
