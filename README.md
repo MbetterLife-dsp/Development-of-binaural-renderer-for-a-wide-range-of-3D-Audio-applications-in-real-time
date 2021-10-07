@@ -97,7 +97,7 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
     
     ![image](https://user-images.githubusercontent.com/86009768/136412229-75e9987e-5841-4a6e-bb53-2883d90776cd.png)
 
-      Where 𝑁_𝑓𝑓𝑡^𝐷𝐸 (𝑏) is the maximum FFT size. Then the number of blocks per band is determined as 
+      Where 𝑁_𝑓𝑓𝑡^max (𝑏) is the maximum FFT size. Then the number of blocks per band is determined as 
       
       ![image](https://user-images.githubusercontent.com/86009768/136411886-e740d9de-0525-42d6-a1e3-d2c23d521405.png)
 
