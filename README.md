@@ -127,7 +127,10 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
    where 𝑟=0,1,…, 𝑁_𝑓𝑟𝑚 (𝑏)−1 𝑎𝑛𝑑 0 ≤𝑛<𝑁_𝑓𝑓𝑡 (𝑏).
 
  * After transforming each subframe signal using FFT, the output of the VOFF module is obtained as
-    ![image](https://user-images.githubusercontent.com/86009768/135452143-b1bbe269-b6de-43d3-8b0f-31e28bdb5f35.png) 
+    
+    ![image](https://user-images.githubusercontent.com/86009768/136419815-4c1163b0-58ef-4a28-ad3f-72180a4cdfba.png) 
+
+    where 𝑋_𝑖 (𝑘,𝑟,𝑏) and 𝐻_𝐷𝐸^𝑖𝑗 (𝑘,𝑠,𝑏) are the FFT coefficients corresponding to 𝑥_𝑖 (𝑛,𝑟,𝑏)  and ℎ_𝐷𝐸^𝑖𝑗 (𝑛,𝑠,𝑏). 
 
 * Later, the output of the VOFF module 𝑌_𝐷𝐸^𝑗 (𝑘,𝑟,𝑏) will be combined with the output of the PLF module before inverse FFT.
     ![image](https://user-images.githubusercontent.com/86009768/135452280-65e08ac9-83da-4757-97a0-5236fff480aa.png)
