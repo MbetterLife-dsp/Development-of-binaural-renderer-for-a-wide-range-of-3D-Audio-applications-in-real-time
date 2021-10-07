@@ -117,11 +117,14 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
       ![image](https://user-images.githubusercontent.com/86009768/135451427-e3efaa2f-5f9e-411e-8f12-5548dfbd01f7.png)
 
   * Let the frame size of the decoded audio signal be 𝐿_𝑓. If 𝑁_𝑓𝑓𝑡 (𝑏) is smaller than 𝐿_𝑓 , the input audio signal is divided into a number of subframes. The number of subframes 𝑁_𝑓𝑟𝑚 (𝑏) is then determined as
+    
     ![image](https://user-images.githubusercontent.com/86009768/136418358-a48e972f-21c5-40bf-ae96-a4468d7b74a2.png)
  
  * Given a sub-band audio input 𝑥_𝑖 (𝐿_𝑓 𝑙+𝑛, 𝑏) of the 𝑙th frame, the 𝑟th subframe signal is obtained as
+    
     ![image](https://user-images.githubusercontent.com/86009768/136418561-94774314-f2ab-44c2-8251-bc8ed12a0f5c.png)
-    where 𝑟=0,1,…, 𝑁_𝑓𝑟𝑚 (𝑏)−1 𝑎𝑛𝑑 0 ≤𝑛<𝑁_𝑓𝑓𝑡 (𝑏).
+   
+   where 𝑟=0,1,…, 𝑁_𝑓𝑟𝑚 (𝑏)−1 𝑎𝑛𝑑 0 ≤𝑛<𝑁_𝑓𝑓𝑡 (𝑏).
 
  * After transforming each subframe signal using FFT, the output of the VOFF module is obtained as
     ![image](https://user-images.githubusercontent.com/86009768/135452143-b1bbe269-b6de-43d3-8b0f-31e28bdb5f35.png) 
