@@ -62,11 +62,11 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
   * Multiband Mixing Time Estimation
     * To measure the mixing time in the QMF domain, the BRIRs ﬁrst need to be decomposed into the QMF domain.
     * The QMF domain sub-band BRIRs ℎ^𝑖𝑗 (𝑛,𝑏) are then obtained as 
-      ![image](https://user-images.githubusercontent.com/86009768/136386585-f6bfff46-1ae0-4ee0-88c0-d520b6aba4be.png)
+      ![image](https://user-images.githubusercontent.com/86009768/136386825-4c3881c0-d543-4c96-9fd7-0a76f1126345.png)
      
     * To measure the mixing time in each sub-band, the proposed method utilizes the simple EDR measure using the sub-band BRIR. 
     * Mixing time is determined using a criterion based on the EDR:
-      ![image](https://user-images.githubusercontent.com/86009768/136386401-4e1b7a12-5f01-49fa-bcae-c7c96df6b545.png)
+      ![image](https://user-images.githubusercontent.com/86009768/136386893-6cab7c55-96cd-4b42-a711-bc6d6b686e0b.png)
     
     * Then a pseudo-mixing time (a scalable mixing time by varying the threshold 𝑇_𝑚 ) is determined; the averaged 𝑁_𝑀𝑇(𝑏) over all channels is given by
       ![image](https://user-images.githubusercontent.com/86009768/135447008-587d8beb-24b5-4239-949f-aa511aafa6f8.png)
