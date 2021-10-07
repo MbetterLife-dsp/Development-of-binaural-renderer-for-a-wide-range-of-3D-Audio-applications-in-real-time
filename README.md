@@ -62,15 +62,14 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
   * Multiband Mixing Time Estimation
     * To measure the mixing time in the QMF domain, the BRIRs ﬁrst need to be decomposed into the QMF domain.
     * The QMF domain sub-band BRIRs ℎ^𝑖𝑗 (𝑛,𝑏) are then obtained as 
-      ![image](https://user-images.githubusercontent.com/86009768/136387429-6d61fd7e-3d5e-4a24-af0b-8df3a74ddffa.png)
+      ![image](https://user-images.githubusercontent.com/86009768/136388037-a589ba77-7573-4fa9-9a9b-79eb672adfb4.png)
      
     * To measure the mixing time in each sub-band, the proposed method utilizes the simple EDR measure using the sub-band BRIR. 
     * Mixing time is determined using a criterion based on the EDR:
-      ![image](https://user-images.githubusercontent.com/86009768/136387134-5af1047b-50cd-44ca-bbd7-0f322cd69e6a.png)
+      ![image](https://user-images.githubusercontent.com/86009768/136387864-38f67ac8-5316-4a20-914b-bccb86046722.png)
     
     * Then a pseudo-mixing time (a scalable mixing time by varying the threshold 𝑇_𝑚 ) is determined; the averaged 𝑁_𝑀𝑇(𝑏) over all channels is given by
-      
-      ![image](https://user-images.githubusercontent.com/86009768/135447008-587d8beb-24b5-4239-949f-aa511aafa6f8.png)
+      ![image](https://user-images.githubusercontent.com/86009768/136388439-ec15bdd9-69d1-41ca-b158-53f15f2c168a.png)
     
     * ^𝑁_𝑀𝑇 (𝑏) is used to partition the BRIRs into two parts:  the direct sound plus early-reﬂection-like and late reverberation-like.
      
