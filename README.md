@@ -66,7 +66,7 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
      
     * To measure the mixing time in each sub-band, the proposed method utilizes the simple EDR measure using the sub-band BRIR. 
     * Mixing time is determined using a criterion based on the EDR:
-      ![image](https://user-images.githubusercontent.com/86009768/136386893-6cab7c55-96cd-4b42-a711-bc6d6b686e0b.png)
+      ![image](https://user-images.githubusercontent.com/86009768/136387134-5af1047b-50cd-44ca-bbd7-0f322cd69e6a.png)
     
     * Then a pseudo-mixing time (a scalable mixing time by varying the threshold 𝑇_𝑚 ) is determined; the averaged 𝑁_𝑀𝑇(𝑏) over all channels is given by
       ![image](https://user-images.githubusercontent.com/86009768/135447008-587d8beb-24b5-4239-949f-aa511aafa6f8.png)
