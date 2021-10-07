@@ -69,6 +69,7 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
       ![image](https://user-images.githubusercontent.com/86009768/136387864-38f67ac8-5316-4a20-914b-bccb86046722.png)
     
     * Then a pseudo-mixing time (a scalable mixing time by varying the threshold 𝑇_𝑚 ) is determined; the averaged 𝑁_𝑀𝑇(𝑏) over all channels is given by
+      
       ![image](https://user-images.githubusercontent.com/86009768/136388439-ec15bdd9-69d1-41ca-b158-53f15f2c168a.png)
     
     * ^𝑁_𝑀𝑇 (𝑏) is used to partition the BRIRs into two parts:  the direct sound plus early-reﬂection-like and late reverberation-like.
