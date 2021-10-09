@@ -153,7 +153,15 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
       ![image](https://user-images.githubusercontent.com/86009768/135453521-12716db1-e9d0-4046-ac68-b88c6bd983a5.png)
     
     * Comparison of convolution-based binaural rendering in QMF domain and convolution-based binaural rendering in time domain.
-      ![image](https://user-images.githubusercontent.com/86009768/135454391-3bd3894c-d310-49ea-9bdb-13f2e70e5441.png)
+      - Convolution-based binaural rendering in QMF domain
+        ![image](https://user-images.githubusercontent.com/86009768/136649960-ffcb2072-6746-4edb-a4ef-e8c88ac3a422.png)
+        
+      - Convolution-based binaural rendering in time domain
+        ![image](https://user-images.githubusercontent.com/86009768/136649994-90f82610-8333-4e37-9a17-853cf1449ae4.png)
+        
+      - Overlap and difference of two method
+        ![image](https://user-images.githubusercontent.com/86009768/136650024-4254a54c-5ff2-4cb8-994c-e8db23680b82.png)
+        (audio results in audio files folder)
 
 * Mixing time
   * Measurement sub-band mixing time
