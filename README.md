@@ -12,7 +12,7 @@ Implementation of :
 
 To achieve high-quality, realistic, and natural 3D audio via headphones, a real-time convolution using BRIRs should be considered.
 
-* Block diagram of the 3D Audio Decoder
+* __Block diagram of the 3D Audio Decoder__
 
   ![image](https://user-images.githubusercontent.com/86009768/135259018-27aad8b9-092a-4461-8338-85e6baaf198a.png)
  
@@ -22,18 +22,18 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
     
     --> The complexity needs to be reduced, but without any audible degradation of quality.
 
-* Purpose of paper
+* __Purpose of paper__
   * Developing an efﬁcient algorithm for processing the multichannel audio signals using given BRIRs.
     * High-quality
     - Reduction of complexity 
     - Binaural rendering algorithm is required for an efﬁcient conversion of multichannel audio signals into binaural signals 
 
-* Method 
+* __Method__
   * The proposed algorithm truncates binaural room impulse response at the mixing time, the transition point from the early-reﬂections part to the late reverberation. 
   * These parts are processed independently by variable order ﬁltering (VOFF) and parametric late reverberation ﬁltering (PLF).
   * A QMF domain tapped delay line (QTDL) is proposed to reduce complexity in the high-frequency band based on the human auditory perception and codec characteristics.
 
-* Observation of Multichannel BRIRs
+* __Observation of Multichannel BRIRs__
   * BRIR (Binaural Room Impulse Response)
     BRIRs also consist of the direct sound, the early-reﬂections, and the late reverberation.
     ![image](https://user-images.githubusercontent.com/86009768/135260984-87993148-5c42-4225-89b0-c5f50fc4761a.png)
@@ -54,7 +54,7 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
       *  In the interval including early reflection, interaural coherence changes a lot dependent to head rotation, but in the late reverberation interval, interaural coherence appears independently of head rotation.
       * That is, early reflection is dependent on the position of the channel speaker, but late reverberation is independent to the channel speaker. Therefore, it is possible to think of a method of changing the interval of late reverberation to a modeled late reverberation with lower complexity.
 
-* Mixing time
+* __Mixing time__
   For the independent processing of the each part of the BRIR, the direct plus early-reflections and late reverberations should be separated, which is possible by finding a transition point, generally referred to as mixing time.
   Late reverberation is independent of the location and direction. 
   For a high-quality result, It is necessary to find the mixing time for each sub-band in the QMF domain.
@@ -90,7 +90,7 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
         * Partitioned direct sound plus early-reflection BRIR : BRIR --> QMF anlaysis --> h_sub_mix = h_sub( 1 : mixingtime , 2)
         * difference = h_sub_full – h_sub_mix
 
-* Variable Order Filtering in Frequency Domain (VOFF)
+* __Variable Order Filtering in Frequency Domain (VOFF)__
   * The separated direct sound plus early-reflection parts of BRIR can have different lengths in each channel and band.
   * To implement blockwise fast convolution with a variable filter order, parameters such as FFT size and the number of BRIR blocks for each sub-band first need to be determined.
   * To perform variable order filtering, each sub-band BRIR is truncated up to 𝐿_𝑉𝑂𝐹𝐹 (𝑏), which is determined to a power of 2 to perform a radix-2 FFT, as given by
@@ -143,7 +143,7 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
 
 # Experiment results
 
-* QMF implementation
+* __QMF implementation__
   * SBR QMF Analysis and Synthesis
     * Analysis
       ![image](https://user-images.githubusercontent.com/86009768/135453449-454c3e2c-216f-41d6-9065-051c100baba1.png)
@@ -165,7 +165,7 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
         ![image](https://user-images.githubusercontent.com/86009768/136650024-4254a54c-5ff2-4cb8-994c-e8db23680b82.png)
         
 
-* Mixing time
+* __Mixing time__
   * Measurement sub-band mixing time
     ![image](https://user-images.githubusercontent.com/86009768/135455721-711778cf-5178-44df-9bd0-0525c70c0dce.png)
     * As implemented in the paper, the estimated pseudo-mixing time from the 2nd band to the 37th band decreases logarithmically, but the mixing time is overestimated above the 38th band.
@@ -179,7 +179,7 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
     
       * As the threshold is lowered, it can be seen that the BRIR becomes similar to the BRIR frequency response of the full length. By setting the threshold according to the actual application situation, the audio quality can be increased or the computational complexity can be reduced.
 
-* Variable Order Filtering in Frequency Domain (VOFF)
+* __Variable Order Filtering in Frequency Domain (VOFF)__
   * VOFF in frequnecy domain 
   
     ![image](https://user-images.githubusercontent.com/86009768/136651102-3f8ea55a-458e-4747-a8d3-3ca94cb147ac.png)
