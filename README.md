@@ -156,11 +156,11 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
     * Comparison of convolution-based binaural rendering in QMF domain and convolution-based binaural rendering in time domain.
       - Convolution-based binaural rendering in QMF domain
       
-        ![image](https://user-images.githubusercontent.com/86009768/136649960-ffcb2072-6746-4edb-a4ef-e8c88ac3a422.png)
+        ![image](https://user-images.githubusercontent.com/86009768/136652507-12142276-2bef-487c-8012-af12e141716b.png)
         
       - Convolution-based binaural rendering in time domain
       
-        ![image](https://user-images.githubusercontent.com/86009768/136649994-90f82610-8333-4e37-9a17-853cf1449ae4.png)
+        ![image](https://user-images.githubusercontent.com/86009768/136652529-5fab4534-962a-45f6-b3c2-ce6fe82b249b.png)
         
       - Overlap and difference of two method (audio results in audio files folder)
         ![image](https://user-images.githubusercontent.com/86009768/136650024-4254a54c-5ff2-4cb8-994c-e8db23680b82.png)
