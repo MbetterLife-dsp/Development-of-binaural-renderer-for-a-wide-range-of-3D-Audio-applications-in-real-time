@@ -55,6 +55,7 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
       * That is, early reflection is dependent on the position of the channel speaker, but late reverberation is independent to the channel speaker. Therefore, it is possible to think of a method of changing the interval of late reverberation to a modeled late reverberation with lower complexity.
 
 * __Mixing time__
+
   For the independent processing of the each part of the BRIR, the direct plus early-reflections and late reverberations should be separated, which is possible by finding a transition point, generally referred to as mixing time.
   Late reverberation is independent of the location and direction. 
   For a high-quality result, It is necessary to find the mixing time for each sub-band in the QMF domain.
