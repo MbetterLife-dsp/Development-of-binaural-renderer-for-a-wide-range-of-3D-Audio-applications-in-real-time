@@ -73,7 +73,7 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
       
       ![image](https://user-images.githubusercontent.com/86009768/136388439-ec15bdd9-69d1-41ca-b158-53f15f2c168a.png)
     
-    * ^𝑁_𝑀𝑇 (𝑏) is used to partition the BRIRs into two parts:  the direct sound plus early-reﬂection-like and late reverberation-like.
+    * <img src="https://render.githubusercontent.com/render/math?math=\hat{N}_{MT}(b)"> is used to partition the BRIRs into two parts:  the direct sound plus early-reﬂection-like and late reverberation-like.
      
       ![image](https://user-images.githubusercontent.com/86009768/135447846-171c14a5-bfc2-4a83-a4eb-4217e760fe2b.png)
       
@@ -98,7 +98,7 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
     
     ![image](https://user-images.githubusercontent.com/86009768/136412229-75e9987e-5841-4a6e-bb53-2883d90776cd.png)
 
-      Where 𝑁_𝑓𝑓𝑡^max (𝑏) is the maximum FFT size. Then the number of blocks per band is determined as 
+      Where <img src="https://render.githubusercontent.com/render/math?math=N_{fft}^{max}(b)"> is the maximum FFT size. Then the number of blocks per band is determined as 
       
       ![image](https://user-images.githubusercontent.com/86009768/136411886-e740d9de-0525-42d6-a1e3-d2c23d521405.png)
 
