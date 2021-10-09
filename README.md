@@ -136,7 +136,7 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
 
     ![image](https://user-images.githubusercontent.com/86009768/135452280-65e08ac9-83da-4757-97a0-5236fff480aa.png)
     
-               (image from [Paper :Scalable Multiband Binaural Renderer for MPEG-H 3D Audio][research])
+    (image from [Paper :Scalable Multiband Binaural Renderer for MPEG-H 3D Audio][research])
     
     * Expression with image 
       ![image](https://user-images.githubusercontent.com/86009768/135452732-1ffc59ec-89f6-4d6a-8b83-6297b671e843.png)
