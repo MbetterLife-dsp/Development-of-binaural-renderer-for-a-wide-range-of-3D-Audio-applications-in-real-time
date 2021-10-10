@@ -104,7 +104,11 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
   * Curve-fitted pseudo-mixing time
     * Practical BRIRs also show that the 1st band has significantly large energy based mixing time N^MT(0). Thus, the first-band pseudo-mixing time N^MT(0) is not included in the curve fitting. The logarithmic curve-fitted pseudo-mixing time is defined as
       
-    ![image](https://user-images.githubusercontent.com/86009768/136697326-01b61e34-bb62-495f-bfa5-8cb721594492.png)
+      ![image](https://user-images.githubusercontent.com/86009768/136697389-5eb24bb4-bac1-4fb2-94a5-a1501c688937.png)
+     
+       where
+     
+       ![image](https://user-images.githubusercontent.com/86009768/136697400-00f6b452-7e9e-475a-bfe6-35f98d103fcf.png)
 
 
 * __Variable Order Filtering in Frequency Domain (VOFF)__
