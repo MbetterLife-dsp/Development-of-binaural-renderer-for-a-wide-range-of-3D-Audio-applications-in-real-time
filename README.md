@@ -121,7 +121,7 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
     
     ![image](https://user-images.githubusercontent.com/86009768/136418358-a48e972f-21c5-40bf-ae96-a4468d7b74a2.png)
  
- * Given a sub-band audio input 𝑥_𝑖 (𝐿_𝑓 𝑙+𝑛, 𝑏) of the 𝑙th frame, the 𝑟th subframe signal is obtained as
+ * Given a sub-band audio input <img src="https://render.githubusercontent.com/render/math?math=x_{i}(L_{f}l+n,b)"> of the 𝑙th frame, the 𝑟th subframe signal is obtained as
     
     ![image](https://user-images.githubusercontent.com/86009768/136418561-94774314-f2ab-44c2-8251-bc8ed12a0f5c.png)
    
@@ -131,9 +131,9 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
     
     ![image](https://user-images.githubusercontent.com/86009768/136419815-4c1163b0-58ef-4a28-ad3f-72180a4cdfba.png) 
 
-    where 𝑋_𝑖 (𝑘,𝑟,𝑏) and 𝐻_𝐷𝐸^𝑖𝑗 (𝑘,𝑠,𝑏) are the FFT coefficients corresponding to 𝑥_𝑖 (𝑛,𝑟,𝑏)  and ℎ_𝐷𝐸^𝑖𝑗 (𝑛,𝑠,𝑏). 
+    where <img src="https://render.githubusercontent.com/render/math?math=X_{i}(k,r,b)"> and <img src="https://render.githubusercontent.com/render/math?math=H_{DE}^{ij}(k,s,b)"> are the FFT coefficients corresponding to <img src="https://render.githubusercontent.com/render/math?math=x_{i}(n,r,b)">  and <img src="https://render.githubusercontent.com/render/math?math=h_{DE}^{ij}(n,s,b)">. 
 
-* Later, the output of the VOFF module 𝑌_𝐷𝐸^𝑗 (𝑘,𝑟,𝑏) will be combined with the output of the PLF module before inverse FFT.
+* Later, the output of the VOFF module <img src="https://render.githubusercontent.com/render/math?math=Y_{DE}^{j}(k,r,b)"> will be combined with the output of the PLF module before inverse FFT.
 
     ![image](https://user-images.githubusercontent.com/86009768/135452280-65e08ac9-83da-4757-97a0-5236fff480aa.png)
     
