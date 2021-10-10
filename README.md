@@ -110,6 +110,8 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
      
        ![image](https://user-images.githubusercontent.com/86009768/136697400-00f6b452-7e9e-475a-bfe6-35f98d103fcf.png)
 
+       Note that K_proc represents the maximum processing band.
+
 
 * __Variable Order Filtering in Frequency Domain (VOFF)__
   * The separated direct sound plus early-reflection parts of BRIR can have different lengths in each channel and band.
