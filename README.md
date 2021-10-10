@@ -208,6 +208,11 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
       ![image](https://user-images.githubusercontent.com/86009768/135458734-bfc4bf67-0081-43cd-beee-61b353875b3f.png)
     
       * As the threshold is lowered, it can be seen that the BRIR becomes similar to the BRIR frequency response of the full length. By setting the threshold according to the actual application situation, the audio quality can be increased or the computational complexity can be reduced.
+ 
+ * Curve-fitted pseudo-mixing time (Threshold = -50dB)
+  
+  ![image](https://user-images.githubusercontent.com/86009768/136697546-7d3e2b68-c1f1-4054-9041-d318f3404300.png)
+
 
 * __Variable Order Filtering in Frequency Domain (VOFF)__
     
