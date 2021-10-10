@@ -44,7 +44,8 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
     * The human auditory system then recognizes the spatial characteristics of the reproduction space via this time-frequency varying spectrum. 
     * Thus, to achieve high  ﬁdelity of 3D sound, the direct sound and early-reﬂections should be accurately reproduced.
     * Late reverberation
-        
+      * FDIC (Frequency-dependent interaural coherence) : FDIC is important acoustic attribute of spatial aspects of auditory perception. 
+  
         ![image](https://user-images.githubusercontent.com/86009768/135296512-36c12694-3bc9-4cdb-8b67-d3b92a3ed814.png) 
          
          (image from [Paper : Scalable Multiband Binaural Renderer for MPEG-H 3D Audio][research])
@@ -53,6 +54,15 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
       * In the figure of (a), the coherence of each channel is large, and in the figure (b), the coherence is small.
       *  In the interval including early reflection, interaural coherence changes a lot dependent to head rotation, but in the late reverberation interval, interaural coherence appears independently of head rotation.
       * That is, early reflection is dependent on the position of the channel speaker, but late reverberation is independent to the channel speaker. Therefore, it is possible to think of a method of changing the interval of late reverberation to a modeled late reverberation with lower complexity.
+      * FDIC matched signal
+        FDIC of each channel can be expressed as
+        
+        ![image](https://user-images.githubusercontent.com/86009768/136695757-ecb103dc-9a64-438d-b43e-cb328032fc16.png)
+        
+        cos⁡(𝛼) and sin⁡(𝛼) are determined to achieve the result that the FDIC between 𝑌_𝐿^0 (𝑘,𝑟,𝑏) and 𝑌_𝐿^1 (𝑘,𝑟,𝑏) is equal to the averaged FDIC. They are given by
+
+        ![image](https://user-images.githubusercontent.com/86009768/136695811-41c5422a-543a-408b-a917-446ebbae165e.png)
+
 
 * __Mixing time__
 
