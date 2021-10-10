@@ -106,13 +106,13 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
   * The window function for the direct sound plus early-reflection part is given by
     ![image](https://user-images.githubusercontent.com/86009768/136652392-c74fdcb4-985b-4dd8-8470-219ac69fa580.png)
   
-     where 0≤𝑛 <(𝑁_𝑓𝑓𝑡 (𝑏))/2,0 ≤𝑏<𝐾_(𝑐𝑜𝑛𝑣, ) 0 ≤  𝑠 <𝑁_𝑏𝑙𝑘^𝐷𝐸 (𝑏) and 𝑤𝑖𝑛𝑑𝑜𝑤(𝑛;𝐿) is a fade-out function with length 𝐿 such as rectangular, cosine, hanning windows, and so on.
+     where <img src="https://render.githubusercontent.com/render/math?math=0\leq n\leq \frac{N_{fft}(b)}{2}, 0\leq b< k_{conv}, 0\leq s< N_{blk}^{DE}(b))"> and 𝑤𝑖𝑛𝑑𝑜𝑤(𝑛;𝐿) is a fade-out function with length 𝐿 such as rectangular, cosine, hanning windows, and so on.
 
   * The sub-band BRIRs are also partitioned into subblocks with zero-padding, as given by
     ![image](https://user-images.githubusercontent.com/86009768/136416604-679a6dd2-9e0e-4bba-af07-3127dffde5f6.png)
     
-    where ℎ_𝐷𝐸^𝑖𝑗 (𝑛,𝑏)=𝑤(𝑛,𝑏) ℎ^𝑖𝑗 (𝑛,𝑏),0≤𝑠<𝑁_𝑏𝑙𝑘^𝐷𝐸 (𝑏),  0≤𝑏<𝐾_𝑐𝑜𝑛𝑣  and 0 ≤𝑛<𝑁_𝑓𝑓𝑡 (𝑏). 
-    Then , to get FFT coefficients 𝐻_𝐷𝐸^𝑖𝑗 (𝑘,𝑠,𝑏), a 𝑁_𝑓𝑓𝑡 (𝑏)𝑠𝑖𝑧𝑒 𝐹𝐹𝑇 is applied to ℎ_𝐷𝐸^𝑖𝑗 (𝑛,𝑥,𝑏).
+    where <img src="https://render.githubusercontent.com/render/math?math=h_{DE}^{ij}(n,b)=w(n,b) h^{ij}(n,b), 0\leq s< N_{blk}^{DE}(b), 0\leq n< K_{conv}">  and <img src="https://render.githubusercontent.com/render/math?math=0\leq n<  N_{fft}(b)">. 
+    Then , to get FFT coefficients <img src="https://render.githubusercontent.com/render/math?math=H_{DE}^{ij}(k,s,b), N_{fft}(b)">𝑠𝑖𝑧𝑒 𝐹𝐹𝑇 is applied to <img src="https://render.githubusercontent.com/render/math?math=h_{DE}^{ij}(n,x,b)">.
 
     * Expression with image
       ![image](https://user-images.githubusercontent.com/86009768/135451427-e3efaa2f-5f9e-411e-8f12-5548dfbd01f7.png)
