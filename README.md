@@ -59,7 +59,7 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
         
         ![image](https://user-images.githubusercontent.com/86009768/136695757-ecb103dc-9a64-438d-b43e-cb328032fc16.png)
         
-        cos⁡(𝛼) and sin⁡(𝛼) are determined to achieve the result that the FDIC between 𝑌_𝐿^0 (𝑘,𝑟,𝑏) and 𝑌_𝐿^1 (𝑘,𝑟,𝑏) is equal to the averaged FDIC. They are given by
+        cos⁡(𝛼) and sin⁡(𝛼) are determined to achieve the result that the FDIC between <img src="https://render.githubusercontent.com/render/math?math=Y_{L}^{0}(k,r,b)"> and <img src="https://render.githubusercontent.com/render/math?math=Y_{L}^{1}(k,r,b)"> is equal to the averaged FDIC. They are given by
 
         ![image](https://user-images.githubusercontent.com/86009768/136695811-41c5422a-543a-408b-a917-446ebbae165e.png)
 
