@@ -164,6 +164,11 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
         
       - Overlap and difference of two method (audio results in audio files folder)
         ![image](https://user-images.githubusercontent.com/86009768/136650024-4254a54c-5ff2-4cb8-994c-e8db23680b82.png)
+
+* __Observation of Multichannel BRIRs__
+
+
+
         
 
 * __Mixing time__
