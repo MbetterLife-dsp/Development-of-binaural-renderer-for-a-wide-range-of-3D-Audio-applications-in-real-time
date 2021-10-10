@@ -176,11 +176,13 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
         ![image](https://user-images.githubusercontent.com/86009768/136650024-4254a54c-5ff2-4cb8-994c-e8db23680b82.png)
 
 * __Observation of Multichannel BRIRs__
-
-
-
+  * Implementation of FDICs
+    ![image](https://user-images.githubusercontent.com/86009768/136696368-2b0d6015-a218-4cd3-86d7-1359fea7760c.png)
+    
+      Results show the calculated FDICs, where the variance of the FDICs of truncated BRIRs is significantly lower compared with the variance of full-length BRIRs.
+      It shows that when BRIRs are truncated after a certain time stamp, the measured FDICs show a consistent tendency regardless of head rotation.
+      This mean that the truncated late reverberation of measured BRIR can be replaced by modeled late reverberation, e.g., white Gaussian noise.
         
-
 * __Mixing time__
   * Measurement sub-band mixing time
     ![image](https://user-images.githubusercontent.com/86009768/135455721-711778cf-5178-44df-9bd0-0525c70c0dce.png)
