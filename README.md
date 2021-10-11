@@ -36,6 +36,7 @@ To achieve high-quality, realistic, and natural 3D audio via headphones, a real-
 * __Observation of Multichannel BRIRs__
   * BRIR (Binaural Room Impulse Response)
     BRIRs also consist of the direct sound, the early-reﬂections, and the late reverberation.
+    
     ![image](https://user-images.githubusercontent.com/86009768/135260984-87993148-5c42-4225-89b0-c5f50fc4761a.png)
 
     (image from [Paper : Scalable Multiband Binaural Renderer for MPEG-H 3D Audio][research])
